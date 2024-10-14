@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import ReduxProvider from "@/redux/components/ReduxProvider";
 import Navbar from "@/components/Navbar";
+import Counter from "@/redux/components/Counter";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +29,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ReduxProvider>
-            <Navbar></Navbar> 
+          <Navbar></Navbar> 
+          <Counter></Counter>
           {children}
         </ReduxProvider>
         
