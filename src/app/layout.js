@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       >
         <ReduxProvider>
           <Navbar></Navbar> 
-          <Counter></Counter>
+       
           {children}
         </ReduxProvider>
         
