@@ -12,17 +12,17 @@ const Counter = () => {
 
     return (
         <div className="mt-28 flex flex-col items-center justify-center">
-            <h1 className="text-3xl mb-4">Redux Counter</h1>
+            <h1 className="text-3xl mb-4 p-6">Redux Counter</h1>
             <div className="flex items-center space-x-4">
                 <button
-                    className="px-4 py-2 bg-blue-500 text-white"
+                    className="px-4 py-2 bg-blue-500 text-white rounded-xl"
                     onClick={() => dispatch(decrement())}
                 >
                     -
                 </button>
                 <span className="text-2xl">{count}</span>
                 <button
-                    className="px-4 py-2 bg-blue-500 text-white"
+                    className="px-4 py-2 bg-blue-500 text-white rounded-xl"
                     onClick={() => dispatch(increment())}
                 >
                     +
@@ -30,7 +30,7 @@ const Counter = () => {
             </div>
             <div className="mt-4">
                 <button
-                    className="px-4 py-2 bg-green-500 text-white"
+                    className="px-4 py-2 bg-green-500 text-white rounded-xl"
                     onClick={() => dispatch(incrementByAmount(5))}
                 >
                     Increment by 5
